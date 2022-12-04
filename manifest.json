@@ -27,6 +27,12 @@
       "storage",
       "tabs"
     ],
+
+    "content_scripts": [{
+      "matches": ["*://youtube.com/watch?v=*"],
+      "css": ["CSS/youtube.css"],
+      "js": ["Scripts/youtube.js"]
+    }],
      
      "host_permissions" : [
        "https://www.instagram.com/*"

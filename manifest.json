@@ -1,0 +1,38 @@
+{
+    "name": "MyVideos",
+    "description": "Elit fugiat ipsum quis minim elit cupidatat cupidatat tempor qui dolore exercitation velit ipsum culpa.",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "icons": {
+        "16": "Assets/icon16.png",
+        "32": "Assets/icon32.png",
+        "48": "Assets/icon48.png",
+        "128": "Assets/icon128.png"
+      },
+
+    "action":{
+      "default_icon":{
+        "16":"Assets/icon16.png",
+        "32":"Assets/icon32.png",
+        "48":"Assets/icon48.png",
+        "128":"Assets/icon128.png"
+      },
+      "default_title": "MyVideos",
+      "default_popup": "popup.html"
+    },
+
+    "options_page": "options.html",
+
+    "permissions": [
+      "storage",
+      "tabs"
+    ],
+     
+     "host_permissions" : [
+       "https://www.instagram.com/*"
+     ],
+    
+    "background": {
+        "service_worker": "background.js"
+      }
+  }
